@@ -6,7 +6,7 @@ const shoppingdata= JSON.parse(JSON.stringify(require("../datafactory/shopping.j
 
 test.describe('Shopping Tests', () => {
 
-test('Validate user can add selected item to shopping Cart', async ( {LoginObj, ProductsObj, ShoppingCartObj, page, baseURL} ) =>{
+test('Validate user can add selected item to shoppingCart', async ( {LoginObj, ProductsObj, ShoppingCartObj, page, baseURL} ) =>{
    
     await LoginObj.openApplication(baseURL);
     await LoginObj.login(logindata.username, logindata.password);
@@ -23,7 +23,7 @@ test('Validate user can add selected item to shopping Cart', async ( {LoginObj, 
 
 } )
 
-test('Validate user can order selected item successfully', async ( {ShoppingCartObj, CheckoutObj, CheckoutOverviewObj, page, baseURL} ) =>{
+test('Verify user can order selected item successfully', async ( {ShoppingCartObj, CheckoutObj, CheckoutOverviewObj, page, baseURL} ) =>{
 
     //await Login_Page.OpenApplication(baseURL);
     //await Login_Page.Login(logindata.username, logindata.password);
