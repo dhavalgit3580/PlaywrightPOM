@@ -4,7 +4,7 @@ import { Screenshot } from '../utilities/helper';
 const logindata= JSON.parse(JSON.stringify(require("../datafactory/login.json")));
 
 
-test('Successful login', async ({ LoginObj, page , baseURL, }) => {
+test('Successful userlogin', async ({ LoginObj, page , baseURL, }) => {
 
     await LoginObj.openApplication(baseURL);
 
@@ -17,7 +17,7 @@ test('Successful login', async ({ LoginObj, page , baseURL, }) => {
     
 });
 
-test('Unsuccessful login', async ({ LoginObj, page, baseURL  }) => {
+test('Unsuccessful userlogin ', async ({ LoginObj, page, baseURL  }) => {
 
     await LoginObj.openApplication(baseURL);
     await LoginObj.login(logindata.username, '1234');
