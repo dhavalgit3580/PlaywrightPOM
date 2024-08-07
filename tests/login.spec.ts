@@ -4,7 +4,10 @@ import { Screenshot } from '../utilities/helper';
 const logindata= JSON.parse(JSON.stringify(require("../datafactory/login.json")));
 
 
-test('Successful user login', async ({ LoginObj, page , baseURL, }) => {
+
+test('Successful Login of user', async ({ LoginObj, page , baseURL, }) => {
+
+
 
     await LoginObj.openApplication(baseURL);
 
