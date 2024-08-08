@@ -1,6 +1,6 @@
 import { test as base, Page } from '@playwright/test';
 import { LoginPage } from '../pages/Login.page';
-import { ProductsPage } from '../pages/products.page';
+import { ProductsPage } from '../pages/Products.page';
 import { ShoppingCartPage } from '../pages/ShoppingCart.page';
 import { CheckoutPage } from '../pages/Checkout.page';
 import { CheckoutOverviewPage } from '../pages/CheckoutOverview.page';
