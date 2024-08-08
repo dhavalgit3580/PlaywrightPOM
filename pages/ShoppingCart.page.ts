@@ -1,5 +1,5 @@
 import { Locator, Page } from "playwright";
-import { ProductsPage } from "./products.page";
+import { ProductsPage } from "./Products.page";
 const logindata= JSON.parse(JSON.stringify(require("../datafactory/login.json")));
 
 export class ShoppingCartPage extends ProductsPage {
