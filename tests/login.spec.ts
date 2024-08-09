@@ -5,7 +5,7 @@ const logindata= JSON.parse(JSON.stringify(require("../datafactory/login.json"))
 
 
 
-test('Successful Login of User', async ({ LoginObj, page , baseURL, }) => {
+test('Successful userLogin', async ({ LoginObj, page , baseURL, }) => {
 
 
 
